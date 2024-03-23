@@ -1,7 +1,7 @@
 # image will be published to ghcr.io/<user>/<name>
 name: kyouwa
 # description will be included in the image's metadata
-description:  ああああああああああ 
+description:  あっあああああああああアアアアア
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/sericea-main
@@ -20,23 +20,37 @@ modules:
     repos:
       # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
     install:
-      # Japanese
+      ## Environment
+      - lxpolkit
+      - qt6-qtwayland
+      - google-noto-emoji-fonts
+
+      ## Sound
+      - pamixer
+
+      # Files
+      - p7zip
+      - unrar-free
+      
+      ## Japanese
+      # Keyboard
       - fcitx5
-      - fcitx5-autostart
       - fcitx5-mozc
-
+      # Langpack
       - langpacks-ja
-
+      # Text analyzing
       - mecab
       - mecab-ipadic
 
-      # Shell
+      ## Shell
+      - alacritty
       - fish
       - ripgrep
       - eza
       - helix
+      - git-delta
 
-      # Media
+      ## Media
       - mpv
       - zathura
       - zathura-pdf-mupdf
