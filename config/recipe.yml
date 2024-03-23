@@ -31,7 +31,8 @@ modules:
       # Files
       - p7zip
       - unrar-free
-      
+      - xarchiver      
+
       ## Japanese
       # Keyboard
       - fcitx5
