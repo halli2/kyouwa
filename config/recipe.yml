@@ -3,7 +3,7 @@ description:  あっあああああああああアアアアア
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/sericea-main
-image-version: 39 # latest is also supported if you want new updates ASAP
+image-version: 40 # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
@@ -16,8 +16,9 @@ modules:
 
   - type: rpm-ostree
     repos:
-      # For EWWW
-      - https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-%OS_VERSION%/solopasha-hyprland-fedora-%OS_VERSION%.repo
+      # eww
+      - https://copr.fedorainfracloud.org/coprs/flekz/kyouwa/repo/fedora-%OS_VERSION%/flekz-kyouwa-fedora-%OS_VERSION%.repo
+      # - https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-%OS_VERSION%/solopasha-hyprland-fedora-%OS_VERSION%.repo
       - https://copr.fedorainfracloud.org/coprs/kylegospo/system76-scheduler/repo/fedora-%OS_VERSION%/system76-scheduler-fedora-%OS_VERSION%.repo
     install:
       ## Environment
@@ -60,9 +61,9 @@ modules:
       - zathura-pdf-mupdf
 
       # Testing
-      # Disable river for now, version in f39 repos is too outdated for use
-      # - river
-      - eww-wayland-git
+      # - eww-wayland-git
+      - river
+      - eww
     remove:
       # Simpler to use tty1 IMO
       - sddm
