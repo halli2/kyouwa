@@ -73,6 +73,9 @@ modules:
       - sddm
       - sddm-wayland-sway
 
+  - type: script
+    scripts:
+      - scripts/cosmic_display_manager.sh
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
     system:
