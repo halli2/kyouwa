@@ -52,7 +52,7 @@ modules:
       - fish
       - ripgrep
       - eza
-      - helix
+      # - helix
       - git-delta
 
       ## Media
