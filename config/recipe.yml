@@ -69,7 +69,7 @@ modules:
       # Use local river
       # - river
       - eww
-      - wayfire
+      # - wayfire
       # - cosmic-epoch
     remove:
       # Simpler to use tty1 IMO
