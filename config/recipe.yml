@@ -22,7 +22,7 @@ modules:
 
       - https://copr.fedorainfracloud.org/coprs/flekz/helix-git/repo/fedora-%OS_VERSION%/flekz-helix-git-fedora-%OS_VERSION%.repo
       - https://copr.fedorainfracloud.org/coprs/kylegospo/system76-scheduler/repo/fedora-%OS_VERSION%/system76-scheduler-fedora-%OS_VERSION%.repo
-      - https://copr.fedorainfracloud.org/coprs/alebastr/river/repo/fedora-%OS_VERSION%/alebastr-river-fedora-%OS_VERSION%.repo
+      # - https://copr.fedorainfracloud.org/coprs/alebastr/river/repo/fedora-%OS_VERSION%/alebastr-river-fedora-%OS_VERSION%.repo
     install:
       ## Environment
       - lxpolkit
@@ -68,8 +68,8 @@ modules:
       # - eww-wayland-git
       # - hyprland
       # Use local river
-      # - river
-      - river-git
+      - river
+      # - river-git
       # - eww
       # - wayfire
       # - cosmic-epoch
