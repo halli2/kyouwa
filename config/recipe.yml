@@ -28,7 +28,6 @@ modules:
       - lxpolkit
       - qt6-qtwayland
       - google-noto-emoji-fonts
-
       - system76-scheduler
 
       ## Sound
@@ -55,6 +54,8 @@ modules:
       - fish
       - ripgrep
       - eza
+      - fd-find
+      - zoxide
       # - helix
       - helix-git
       - git-delta
@@ -64,15 +65,8 @@ modules:
       - zathura
       - zathura-pdf-mupdf
 
-      # Testing
-      # - eww-wayland-git
-      # - hyprland
-      # Use local river
+      ## WM
       - river
-      # - river-git
-      # - eww
-      # - wayfire
-      # - cosmic-epoch
     remove:
       # Simpler to use tty1 IMO
       - sddm
