@@ -65,6 +65,9 @@ modules:
       - zathura
       - zathura-pdf-mupdf
 
+      - mpd
+      - ncmpcpp
+
       ## WM
       - river
     remove:
