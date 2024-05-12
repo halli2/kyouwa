@@ -39,6 +39,9 @@ modules:
       - unrar-free
       - xarchiver      
 
+      # -- Android
+      - synchting
+
       ## Japanese
       # Keyboard
       - fcitx5
@@ -67,6 +70,9 @@ modules:
 
       - mpd
       - ncmpcpp
+      - cantata
+      - mpc
+      - mpdscribble
 
       ## WM
       - river
